@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import { Home, Result } from '../../../scenes';
+import { Home, Ia } from '../../../scenes';
 
 
 const Content = () => (
     <div>
-        <Route path="/result" component={ Result } />
+        <Route path="/ia" component={ Ia } />
         <Route path="/" exact component={ Home } />        
     </div>
 );

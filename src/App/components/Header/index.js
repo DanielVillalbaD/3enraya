@@ -8,16 +8,18 @@ const StyledHeader = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 `;
 
 const StyledMenu = styled.nav`
     display: inline-block;
+    margin-bottom: 2rem; 
 `;
 
 const StyledLink = styled(Link)`
     text-decoration: none;
     transition: all 0.3s ease;
-    padding: 0.5rem;
+    padding: 0rem 0.7rem;
     color: #333;
     &:hover, &:focus, &:active {
         color: steelblue;
@@ -28,8 +30,9 @@ const Header = () => (
     <StyledHeader>
         <h1>3 en Raya</h1>
         <StyledMenu>
-            <StyledLink to="/">Game</StyledLink>
-            <StyledLink to="/result">Results</StyledLink>            
+            <StyledLink to="/">2 Players</StyledLink>
+             | 
+            <StyledLink to="/ia">1 Player</StyledLink>            
         </StyledMenu>        
     </StyledHeader>
 );

@@ -1,2 +1,2 @@
 export { default as Home } from './home';
-export { default as Result } from './result';
+export { default as Ia } from './ia';

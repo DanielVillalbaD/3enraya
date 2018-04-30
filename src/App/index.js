@@ -1,21 +1,14 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { injectGlobal } from 'styled-components';
-import { normalize } from 'polished';
+import React, { Component } from 'react';
+import View from './view';
 
-import { Header, Content } from './components';
-
-injectGlobal`
-  ${normalize()}  
-`;
-
-const App = () => (
-  <BrowserRouter>
-    <div>
-      <Header />
-      <Content />
-    </div>
-  </BrowserRouter>
-);
+class App extends Component {
+  state = {
+    isReady: true,
+  };
+  
+  render() {
+    return this.state.isReady ? <View /> : <div>Cargando...</div>;
+  }
+}
 
 export default App;
